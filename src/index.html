@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
     method="post"
@@ -25,13 +24,15 @@
           minlength="1">
         </label>
         <label for="name" class="input_label">Name:
-          <input type="text"
+          <input
+          type="text"
           id="name"
           name="user_name"
           minlength="1">
         </label>
         <label for="years_old" class="input_label">How old are You?
-          <input type="number"
+          <input
+          type="number"
           name="years_old"
           id="years_old"
           min="1"
@@ -39,13 +40,15 @@
           value="12">
         </label>
         <label for="date_of_birth" class="input_label">Full date of birth:
-          <input type="date"
+          <input
+          type="date"
           id="date_of_birth"
           placeholder="mm / dd / yyy"
           name="date_of_birth">
         </label>
-        <label for="terms_of_agreement" class="input_label">I agree the terms of agreement
-          <input type="checkbox"
+        <label for="terms_of_agreement" class="input_label">I accept the term of the agreement
+          <input
+          type="checkbox"
           id="terms_of_agreement"
           name="terms_of_agreement"
           required>
@@ -56,7 +59,8 @@
           Registration
         </legend>
         <label for="email" class="input_label">E-mail:
-          <input type="email"
+          <input
+          type="email"
           id="email"
           name="email"
           placeholder="email@example.com"
@@ -64,7 +68,8 @@
           >
         </label>
         <label for="password" class="input_label">Password:
-          <input type="password"
+          <input
+          type="password"
           id="password"
           name="password"
           minlength="5"
@@ -77,30 +82,35 @@
           An interesting fact about you!
         </legend>
         <label class="input_label">Do you love cats?
-          <input type="radio"
+          <input
+          type="radio"
           name="love_cats"
           id="yes_cats"
           value="yes_cats">
           <label for="yes">Yes</label>
-          <input type="radio"
+          <input
+          type="radio"
           name="love_cats"
           id="no_cats"
           value="no_cats">
           <label for="no_cats">No</label>
         </label>
         <label for="fav_color" class="input_label">What is your favorite color?
-          <input type="color"
+          <input
+          type="color"
           id="fav_color"
           name="fav_color"
           value="fff">
         </label>
         <label for="to_bed" class="input_label">What time do you go to bed?
-          <input type="time"
+          <input
+          type="time"
           name="time_to_bed"
           id="to_bed">
         </label>
         <label for="fav_cars" class="input_label">What are your favorite brend of cars?
-          <select name="fav_cars"
+          <select
+          name="fav_cars"
           id="fav_cars"
           multiple>
             <option
@@ -111,8 +121,9 @@
             <option value="Lada">Lada</option>
           </select>
         </label>
-        <label for="work_rate" class="input_label">How do you rate your work?
-          <input type="range"
+        <label for="work_rate" class="input_label">How do you rate our work?
+          <input
+          type="range"
           name="Rate_of_work"
           id="work_rate"
           min="0"
@@ -125,13 +136,16 @@
           Additional info:
         </legend>
         <label for="feedback" class="input_label">Comments:
-          <textarea name="comments"
+          <textarea
+          name="comments"
           id="feedback"
           cols="30"
           rows="2"></textarea>
         </label>
         <label for="recomend_us" class="input_label">Would you recommend us?
-          <select name="recomends" id="recomend_us">
+          <select
+          name="recomends"
+          id="recomend_us">
             <option value="yes" selected>yes</option>
             <option value="no">no</option>
           </select>

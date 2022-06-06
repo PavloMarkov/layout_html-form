@@ -1,9 +1,13 @@
 /* styles go here */
 .input_label {
   display: block;
-  margin: 10px 0;
+  margin-bottom: 10px;
+}
+
+.input_label:last-child {
+  margin-bottom: 0;
 }
 
 .groups {
-  margin: 20px 0;
+  margin-bottom: 20px;
 }
