@@ -13,7 +13,9 @@
   <body>
     <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+    method="post"
+    autocomplete="off">
       <fieldset>
         <legend>Personal information</legend>
         <label for="surname" class="input_label">Surname:
@@ -64,6 +66,52 @@
           id="password"
           name="password"
           required>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>
+          An interesting fact about you!
+        </legend>
+        <label class="input_label">Do you love cats?
+          <input type="radio"
+          name="love_cats"
+          id="yes_cats"
+          value="yes_cats">
+          <label for="yes">Yes</label>
+          <input type="radio"
+          name="love_cats"
+          id="no_cats"
+          value="no_cats">
+          <label for="no_cats">No</label>
+        </label>
+        <label for="fav_color" class="input_label">What is your favorite color?
+          <input type="color"
+          id="fav_color"
+          name="fav_color"
+          value="fff">
+        </label>
+        <label for="to_bed" class="input_label">What time do you go to bed?
+          <input type="time"
+          name="time_to_bed"
+          id="to_bed">
+        </label>
+        <label for="fav_cars" class="input_label">What are your favorite brend of cars?
+          <select name="fav_cars" id="fav_cars">
+            <option
+            disabled
+            selected></option>
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
+        </label>
+        <label for="work_rate" class="input_label">How do you rate your work?
+          <input type="range"
+          name="Rate_of_work"
+          id="work_rate"
+          min="0"
+          max="100"
+          value="0">
         </label>
       </fieldset>
     </form>
