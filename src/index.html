@@ -17,24 +17,53 @@
       <fieldset>
         <legend>Personal information</legend>
         <label for="surname" class="input_label">Surname:
-          <input type="text" id="surname">
+          <input type="text"
+          id="surname"
+          name="user_surname">
         </label>
         <label for="name" class="input_label">Name:
-          <input type="text" id="name">
+          <input type="text"
+          id="name"
+          name="user_name">
         </label>
         <label for="years_old" class="input_label">How old are You?
           <input type="number"
+          name="years_old"
           id="years_old"
           min="1"
           max="100"
           value="12">
         </label>
         <label for="date_of_birth" class="input_label">Full date of birth:
-          <input type="date" id="date_of_birth"
-          placeholder="mm / dd / yyy">
+          <input type="date"
+          id="date_of_birth"
+          placeholder="mm / dd / yyy"
+          name="date_of_birth">
         </label>
         <label for="terms_of_agreement" class="input_label">I agree the terms of agreement
-          <input type="checkbox" id="terms_of_agreement">
+          <input type="checkbox"
+          id="terms_of_agreement"
+          name="terms_of_agreement"
+          required>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>
+          Registration
+        </legend>
+        <label for="email" class="input_label">E-mail:
+          <input type="email"
+          id="email"
+          name="email"
+          placeholder="email@example.com"
+          required
+          >
+        </label>
+        <label for="password" class="input_label">Password:
+          <input type="password"
+          id="password"
+          name="password"
+          required>
         </label>
       </fieldset>
     </form>
