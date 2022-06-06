@@ -16,142 +16,190 @@
     method="post"
     autocomplete="off">
       <fieldset class="groups">
-        <legend>Personal information</legend>
-        <label for="surname" class="input_label">Surname:
+        <legend>
+          Personal information
+        </legend>
+        <label for="surname" class="input_label">
+          Surname:
           <input type="text"
-          id="surname"
-          name="user_surname"
-          minlength="1">
+            id="surname"
+            name="user_surname"
+            minlength="1"
+          >
         </label>
-        <label for="name" class="input_label">Name:
+        <label for="name" class="input_label">
+          Name:
           <input
-          type="text"
-          id="name"
-          name="user_name"
-          minlength="1">
+            type="text"
+            id="name"
+            name="user_name"
+            minlength="1"
+          >
         </label>
-        <label for="years_old" class="input_label">How old are You?
+        <label for="years_old" class="input_label">
+          How old are You?
           <input
-          type="number"
-          name="years_old"
-          id="years_old"
-          min="1"
-          max="100"
-          value="12">
+            type="number"
+            name="years_old"
+            id="years_old"
+            min="1"
+            max="100"
+            value="12"
+          >
         </label>
-        <label for="date_of_birth" class="input_label">Full date of birth:
+        <label for="date_of_birth" class="input_label">
+          Full date of birth:
           <input
-          type="date"
-          id="date_of_birth"
-          placeholder="mm / dd / yyy"
-          name="date_of_birth">
+            type="date"
+            id="date_of_birth"
+            placeholder="mm / dd / yyy"
+            name="date_of_birth"
+          >
         </label>
-        <label for="terms_of_agreement" class="input_label">I accept the term of the agreement
+        <label for="terms_of_agreement" class="input_label">
+          I accept the term of the agreement
           <input
-          type="checkbox"
-          id="terms_of_agreement"
-          name="terms_of_agreement"
-          required>
+            type="checkbox"
+            id="terms_of_agreement"
+            name="terms_of_agreement"
+            required
+          >
         </label>
       </fieldset>
       <fieldset class="groups">
         <legend>
           Registration
         </legend>
-        <label for="email" class="input_label">E-mail:
+        <label for="email" class="input_label">
+          E-mail:
           <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="email@example.com"
-          required
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email@example.com"
+            required
           >
         </label>
-        <label for="password" class="input_label">Password:
+        <label for="password" class="input_label">
+          Password:
           <input
-          type="password"
-          id="password"
-          name="password"
-          minlength="5"
-          maxlength="32"
-          required>
+            type="password"
+            id="password"
+            name="password"
+            minlength="5"
+            maxlength="32"
+            required
+          >
         </label>
       </fieldset>
       <fieldset class="groups">
         <legend>
           An interesting fact about you!
         </legend>
-        <label class="input_label">Do you love cats?
+        <label class="input_label">
+          Do you love cats?
           <input
-          type="radio"
-          name="love_cats"
-          id="yes_cats"
-          value="yes_cats">
-          <label for="yes">Yes</label>
+            type="radio"
+            name="love_cats"
+            id="yes_cats"
+            value="yes_cats"
+          >
+          <label for="yes">
+            Yes
+          </label>
           <input
-          type="radio"
-          name="love_cats"
-          id="no_cats"
-          value="no_cats">
-          <label for="no_cats">No</label>
+            type="radio"
+            name="love_cats"
+            id="no_cats"
+            value="no_cats"
+          >
+          <label for="no_cats">
+            No
+          </label>
         </label>
-        <label for="fav_color" class="input_label">What is your favorite color?
+        <label for="fav_color" class="input_label">
+          What is your favorite color?
           <input
-          type="color"
-          id="fav_color"
-          name="fav_color"
-          value="fff">
+            type="color"
+            id="fav_color"
+            name="fav_color"
+            value="fff"
+          >
         </label>
-        <label for="to_bed" class="input_label">What time do you go to bed?
+        <label for="to_bed" class="input_label">
+          What time do you go to bed?
           <input
-          type="time"
-          name="time_to_bed"
-          id="to_bed">
+            type="time"
+            name="time_to_bed"
+            id="to_bed"
+          >
         </label>
-        <label for="fav_cars" class="input_label">What are your favorite brend of cars?
+        <label for="fav_cars" class="input_label">
+          What are your favorite brend of cars?
           <select
           name="fav_cars"
           id="fav_cars"
-          multiple>
+          multiple
+          >
             <option
             disabled
-            selected></option>
-            <option value="BMW">BMW</option>
-            <option value="Audi">Audi</option>
-            <option value="Lada">Lada</option>
+            selected
+            >
+            </option>
+            <option value="BMW">
+              BMW
+            </option>
+            <option value="Audi">
+              Audi
+            </option>
+            <option value="Lada">
+              Lada
+            </option>
           </select>
         </label>
-        <label for="work_rate" class="input_label">How do you rate our work?
+        <label for="work_rate" class="input_label">
+          How do you rate our work?
           <input
-          type="range"
-          name="Rate_of_work"
-          id="work_rate"
-          min="0"
-          max="100"
-          value="0">
+            type="range"
+            name="Rate_of_work"
+            id="work_rate"
+            min="0"
+            max="100"
+            value="0"
+          >
         </label>
       </fieldset>
       <fieldset class="groups">
         <legend>
           Additional info:
         </legend>
-        <label for="feedback" class="input_label">Comments:
+        <label for="feedback" class="input_label">
+          Comments:
           <textarea
-          name="comments"
-          id="feedback"
-          cols="30"
-          rows="2"></textarea>
+            name="comments"
+            id="feedback"
+            cols="30"
+            rows="2"
+        ></textarea>
         </label>
-        <label for="recomend_us" class="input_label">Would you recommend us?
+        <label for="recomend_us" class="input_label">
+          Would you recommend us?
           <select
           name="recomends"
-          id="recomend_us">
-            <option value="yes" selected>yes</option>
-            <option value="no">no</option>
+          id="recomend_us"
+          >
+            <option value="yes" selected>
+              yes
+            </option>
+            <option value="no">
+              no
+            </option>
           </select>
         </label>
       </fieldset>
-      <button type="submit">Submit</button>
+      <button type="submit">
+        Submit
+      </button>
     </form>
   </body>
 </html>
