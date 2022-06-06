@@ -1,4 +1,9 @@
 /* styles go here */
 .input_label {
   display: block;
+  margin: 10px 0;
+}
+
+.groups {
+  margin: 20px 0;
 }

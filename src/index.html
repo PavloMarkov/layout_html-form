@@ -16,17 +16,19 @@
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
     method="post"
     autocomplete="off">
-      <fieldset>
+      <fieldset class="groups">
         <legend>Personal information</legend>
         <label for="surname" class="input_label">Surname:
           <input type="text"
           id="surname"
-          name="user_surname">
+          name="user_surname"
+          minlength="1">
         </label>
         <label for="name" class="input_label">Name:
           <input type="text"
           id="name"
-          name="user_name">
+          name="user_name"
+          minlength="1">
         </label>
         <label for="years_old" class="input_label">How old are You?
           <input type="number"
@@ -49,7 +51,7 @@
           required>
         </label>
       </fieldset>
-      <fieldset>
+      <fieldset class="groups">
         <legend>
           Registration
         </legend>
@@ -65,10 +67,12 @@
           <input type="password"
           id="password"
           name="password"
+          minlength="5"
+          maxlength="32"
           required>
         </label>
       </fieldset>
-      <fieldset>
+      <fieldset class="groups">
         <legend>
           An interesting fact about you!
         </legend>
@@ -96,7 +100,9 @@
           id="to_bed">
         </label>
         <label for="fav_cars" class="input_label">What are your favorite brend of cars?
-          <select name="fav_cars" id="fav_cars">
+          <select name="fav_cars"
+          id="fav_cars"
+          multiple>
             <option
             disabled
             selected></option>
@@ -114,6 +120,24 @@
           value="0">
         </label>
       </fieldset>
+      <fieldset class="groups">
+        <legend>
+          Additional info:
+        </legend>
+        <label for="feedback" class="input_label">Comments:
+          <textarea name="comments"
+          id="feedback"
+          cols="30"
+          rows="2"></textarea>
+        </label>
+        <label for="recomend_us" class="input_label">Would you recommend us?
+          <select name="recomends" id="recomend_us">
+            <option value="yes" selected>yes</option>
+            <option value="no">no</option>
+          </select>
+        </label>
+      </fieldset>
+      <button type="submit">Submit</button>
     </form>
   </body>
 </html>
