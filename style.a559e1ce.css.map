@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.css"],"names":[],"mappings":"AACA,aACE,aAAc,CACd,kBACF,CAEA,wBACE,eACF,CAEA,QACE,kBACF","file":"style.a559e1ce.css","sourceRoot":"../src","sourcesContent":["/* styles go here */\n.input_label {\n  display: block;\n  margin-bottom: 10px;\n}\n\n.input_label:last-child {\n  margin-bottom: 0;\n}\n\n.groups {\n  margin-bottom: 20px;\n}\n"]}
